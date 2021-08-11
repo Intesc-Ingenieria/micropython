@@ -54,11 +54,13 @@
 #define MICROPY_HW_SPI1_SCK  (pin_B3)
 #define MICROPY_HW_SPI1_MISO (pin_B4)
 #define MICROPY_HW_SPI1_MOSI (pin_B5)
+
 // SPI-2 bus
 #define MICROPY_HW_SPI2_NSS  (pin_B12)
 #define MICROPY_HW_SPI2_SCK  (pin_B13)
 #define MICROPY_HW_SPI2_MISO (pin_B14)
 #define MICROPY_HW_SPI2_MOSI (pin_B15)
+
 // CAN busses
 //#define MICROPY_HW_CAN1_NAME "YA"
 #define MICROPY_HW_CAN1_TX   (pin_D1) // Y4
@@ -88,3 +90,8 @@
 #define MICROPY_HW_SDCARD_DETECT_PULL       (GPIO_PULLUP)
 #define MICROPY_HW_SDCARD_DETECT_PRESENT    (GPIO_PIN_RESET)
 
+// I2S test. Using this enables the use of the I2S library from the machine module
+#define MICROPY_HW_ENABLE_I2S (1)
+
+// Activating I2S buses 
+#define MICROPY_HW_I2S2             (1)
